@@ -1,0 +1,73 @@
+{
+  "name": "MasterModuleUser",
+  "version": "0.1.0",
+  "summary": "A short description of MasterModuleUser.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/FocusLyn/MasterModuleUser",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "FocusLyn": "nsstring@foxmail.com"
+  },
+  "source": {
+    "git": "https://github.com/FocusLyn/MasterModuleUser.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "default_subspecs": "Classes",
+  "subspecs": [
+    {
+      "name": "Classes",
+      "subspecs": [
+        {
+          "name": "Net",
+          "source_files": "MasterModuleUser/Classes/Net/*.{h,m}",
+          "frameworks": [
+            "UIKit",
+            "Security",
+            "CoreFoundation"
+          ],
+          "dependencies": {
+            "AFNetworking": [
+
+            ]
+          }
+        },
+        {
+          "name": "View",
+          "source_files": "MasterModuleUser/Classes/View/*.{h,m}",
+          "frameworks": "UIKit",
+          "dependencies": {
+            "Masonry": [
+
+            ]
+          }
+        },
+        {
+          "name": "ViewController",
+          "source_files": "MasterModuleUser/Classes/ViewController/*.{h,m}",
+          "frameworks": [
+            "UIKit",
+            "Security",
+            "CoreFoundation"
+          ],
+          "dependencies": {
+            "Masonry": [
+
+            ],
+            "MasterModuleUser/Classes/Net": [
+
+            ],
+            "MasterModuleUser/Classes/View": [
+
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

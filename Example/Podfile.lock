@@ -1,0 +1,52 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - Masonry (1.1.0)
+  - MasterModuleUser (0.1.0):
+    - MasterModuleUser/Classes (= 0.1.0)
+  - MasterModuleUser/Classes (0.1.0):
+    - MasterModuleUser/Classes/Net (= 0.1.0)
+    - MasterModuleUser/Classes/View (= 0.1.0)
+    - MasterModuleUser/Classes/ViewController (= 0.1.0)
+  - MasterModuleUser/Classes/Net (0.1.0):
+    - AFNetworking
+  - MasterModuleUser/Classes/View (0.1.0):
+    - Masonry
+  - MasterModuleUser/Classes/ViewController (0.1.0):
+    - Masonry
+    - MasterModuleUser/Classes/Net
+    - MasterModuleUser/Classes/View
+
+DEPENDENCIES:
+  - MasterModuleUser (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - Masonry
+
+EXTERNAL SOURCES:
+  MasterModuleUser:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MasterModuleUser: fd9a5aba6649aeaf9be58e0772c368be5cdd777b
+
+PODFILE CHECKSUM: c6bda2fe4acbdabf92db626c8a8facf2ed7db312
+
+COCOAPODS: 1.5.3

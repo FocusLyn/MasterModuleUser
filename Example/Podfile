@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'MasterModuleUser_Example' do
+  pod 'MasterModuleUser', :path => '../'
+
+  target 'MasterModuleUser_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,6 @@
+framework module Pods_MasterModuleUser_Example {
+  umbrella header "Pods-MasterModuleUser_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
